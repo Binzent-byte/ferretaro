@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ferretería y Pinturas Ferrétaro México</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Ferretería y Pinturas Ferrétaro México: herramientas, plomería, electricidad, pinturas y más en Querétaro." />
+
+  <style>
+:root {
+  --azul: #0a2a43;
+  --amarillo: #f2c94c;
+  --gris: #f5f5f5;
+  --texto: #333;
+  --blanco: #fff;
+}
+
+/* RESETEO COMPLETO */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: var(--gris);
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+header {
+  background: var(--azul);
+  color: var(--blanco);
+  height: 70px;              /* altura fija */
+  display: flex;
+  align-items: center;       /* centra logo y menú */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 0;                /* evita que crezca */
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;   /* solo padding lateral */
+}
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: var(--blanco);
+      margin-left: 18px;
+      text-decoration: none;
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
+    nav a:hover { opacity: 1; }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.2rem;
+      letter-spacing: 0.05em;
+    }
+
+
+.logo img {
+  height: 180px;   /* Ajusta aquí el tamaño del logo */
+  width: auto;
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+}
+    .hero {
+      background: linear-gradient(135deg, #0a2a43, #1f6fa5);
+      color: var(--blanco);
+      padding: 70px 0;
+    }
+
+    .hero h1 {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      max-width: 500px;
+      margin-bottom: 20px;
+      opacity: 0.95;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 999px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    .btn-primary {
+      background: var(--amarillo);
+      color: #222;
+    }
+
+    .btn-primary:hover {
+      background: #ffd95e;
+      transform: translateY(-2px);
+    }
+
+    section {
+      padding: 60px 0;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: var(--azul);
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--blanco);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      color: var(--azul);
+      margin-bottom: 8px;
+    }
+
+    .contact-info p {
+      margin-bottom: 8px;
+    }
+
+    .map {
+      margin-top: 20px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    footer {
+      background: var(--azul);
+      color: var(--blanco);
+      padding: 30px 0;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 1.9rem; }
+    }
+
+
+
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+
+<div class="logo">
+  <img src="ferretaro_logo.png" alt="Logo Ferrétaro México">
+</div>
+      <div>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#ubicacion">Ubicación</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#politicas">Políticas</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Ferretería y Pinturas Ferrétaro México</h1>
+    <p>Tu ferretería de confianza en Querétaro. Herramientas, plomería, electricidad, pinturas y más para tu hogar y negocio.</p>
+    <a class="btn btn-primary" href="https://wa.me/5214427113154" target="_blank">Contactar por WhatsApp</a>
+  </div>
+</section>
+
+<section id="nosotros">
+  <div class="container">
+    <h2>Sobre Nosotros</h2>
+    <p class="subtitle">Atendiendo a Querétaro con calidad, servicio y precios justos.</p>
+    <p>Somos una ferretería local con enfoque en servicio al cliente, asesoría técnica y disponibilidad inmediata de productos esenciales para el hogar, la industria y la construcción ligera.</p>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="container">
+    <h2>Servicios y Productos</h2>
+    <p class="subtitle">Todo lo que necesitas en un solo lugar.</p>
+
+    <div class="grid-3">
+      <div class="card">
+        <h3>Herramientas</h3>
+        <p>Manual y eléctrica para hogar, taller e industria.</p>
+      </div>
+
+      <div class="card">
+        <h3>Plomería</h3>
+        <p>Tubería, conexiones, válvulas y accesorios.</p>
+      </div>
+
+      <div class="card">
+        <h3>Material Eléctrico</h3>
+        <p>Cables, apagadores, contactos, iluminación y más.</p>
+      </div>
+
+      <div class="card">
+        <h3>Pinturas y Recubrimientos</h3>
+        <p>Vinílicas, esmaltes, selladores y herramientas de aplicación.</p>
+      </div>
+
+      <div class="card">
+        <h3>Tornillería</h3>
+        <p>Variedad en tornillos, tuercas, anclas y fijaciones.</p>
+      </div>
+
+      <div class="card">
+        <h3>Construcción Ligera</h3>
+        <p>Material básico para reparaciones y mantenimiento.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ubicacion">
+  <div class="container">
+    <h2>Ubicación</h2>
+    <p class="subtitle">Encuéntranos fácilmente en El Marqués, Querétaro.</p>
+
+    <div class="map">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.123456!2d-100.123456!3d20.654321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0000000000000000!2sFerreter%C3%ADa%20Ferr%C3%A9taro!5e0!3m2!1ses!2smx!4v0000000000000"
+        width="100%" height="350" style="border:0;" allowfullscreen loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="container">
+    <h2>Contacto</h2>
+    <p class="subtitle">Estamos para ayudarte.</p>
+
+    <div class="contact-info">
+      <p><strong>Teléfono:</strong> 442 711 3154 </p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/521447113154" target="_blank">Enviar mensaje</a></p>
+      <p><strong>Correo:</strong> contacto@ferretaro.com</p>
+      <p><strong>Horario:</strong> Lunes a viernes, 8:30 a 18:00 y sábados, 8:30 a 16:00 </p>
+    </div>
+  </div>
+</section>
+
+<section id="politicas">
+  <div class="container">
+    <h2>Políticas</h2>
+    <p class="subtitle">Transparencia y confianza.</p>
+
+    <p><strong>Devoluciones:</strong> 7 días con ticket y producto en buen estado.</p>
+    <p><strong>Garantías:</strong> Según fabricante. Apoyamos en el proceso.</p>
+    <p><strong>Formas de pago:</strong> Efectivo, tarjeta y transferencia. No cheques. </p>
+    <p><strong>Facturación:</strong> Disponible el mismo día de la compra.</p>
+  </div>
+</section>
+
+
+ 
+
+
+
+<footer>
+
+
+ <p style="margin: 0; color: var(--blanco); font-size: 0.9rem;">
+    © © 2026 Ferretería y Pinturas Ferrétaro México · GRUPO FERRETANO DEL CENTRO GFC231209389 · Todos los derechos reservados
+  </p>
+  <p style="margin: 4px 0 0;">
+    <a href="privacidad.html" style="color: var(--blanco); text-decoration: none; opacity: 0.9;">
+      Aviso de Privacidad
+    </a>
+  </p>
+
+</body>
+</html>
